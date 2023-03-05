@@ -37,9 +37,9 @@ class _StartPageState extends State<StartPage> {
   Widget logoContent() {
     return Center(
         child: AnimatedContainer(
-            duration: const Duration(milliseconds: 600),
+            duration: const Duration(milliseconds: 500),
             curve: Curves.fastOutSlowIn,
-            width: starting ? 0 : 250,
+            width: starting ? 0 : 300,
             child: Image.asset(
               "lib/assets/images/tutelarPet.png",
             )));
