@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tutelar_pet_app/src/screens/home/home.dart';
+import 'package:tutelar_pet_app/src/screens/login/main_login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,10 @@ class MyApp extends StatelessWidget {
         secondaryHeaderColor: const Color.fromARGB(255, 150, 0, 0),
         dividerColor: const Color.fromARGB(255, 76, 76, 76),
       ),
-      home: const HomePage(),
+      initialRoute: '/start',
+      routes: {
+        '/start':(context) => const MainLogin(),
+      },
     );
   }
 }
